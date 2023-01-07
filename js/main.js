@@ -1,6 +1,9 @@
-function convertir (numero, conversor, unidadIngresada, unidadPedida){
-    let numero = prompt( `Ingrese cuantos $[unidadIngresada] desea transformar a $[unidadPedida]`)
-    let resultado= ("numero*conversor")
-    alert=(`$[numero] $[unidadIngresada] son $[resultado] [unidadPedida]`)
+function convertir (conversor, unidadIngresada, unidadDeseada)
+{
+   let valorAConvertir = parseInt(prompt(`ingrese la cantidad de ${unidadIngresada} que desea convertir a ${unidadDeseada}`))
+   let valorConvertido= (conversor * valorAConvertir)
+   alert (`${valorAConvertir} ${unidadIngresada} son ${valorConvertido} ${unidadDeseada}`)
 }
-convertir(numero, 28.35, Onzas, gramos)
+convertir(10, "metros", "decimetros")
+
+

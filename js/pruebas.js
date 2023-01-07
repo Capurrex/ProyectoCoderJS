@@ -76,3 +76,30 @@ do{
         break
     }
 }while(!salirMenu)
+
+//ejemplo con if -- else if -- else
+ let precio = 35;
+//Importante de IF anidados
+
+if (precio < 20) {
+     alert("El precio es menor que 20");
+}
+ else if (precio < 50) {
+     alert("El precio es menor que 50");
+ }
+ else if (precio < 100) {
+     alert("El precio es menor que 100");
+ }
+ else {
+     alert("El precio es mayor que 100");
+ }
+
+ function pedirNumeros(){
+    let num1 = parseInt(prompt("Ingrese el primer num"))
+    let num2 = parseInt(prompt("Ingrese el segundo num"))
+    // suma(num1,num2)
+    let resultado = suma(num1,num2)
+    let resultadoResta = resta(num1, num2)
+    mostrarResultado(resultado)
+    mostrarResultado(resultadoResta)
+}
