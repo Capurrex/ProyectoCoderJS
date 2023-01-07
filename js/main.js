@@ -1,6 +1,10 @@
 function convertir (conversor, unidadIngresada, unidadDeseada)
 {
-   let valorAConvertir = parseInt(prompt(`ingrese la cantidad de ${unidadIngresada} que desea convertir a ${unidadDeseada}`))
+   do {
+      let valorAConvertir = parseInt(prompt(`Ingrese la cantidad de ${unidadIngresada} que desea convertir a ${unidadDeseada}`))
+   while(isNaN(valorAConvertir)){
+      let valorAConvertir = parseInt(prompt(`Atencion, ingrese un numero para  la cantidad de ${unidadIngresada} que desea convertir a ${unidadDeseada}`))
+   }
    let valorConvertido= (conversor * valorAConvertir)
    alert (`${valorAConvertir} ${unidadIngresada} son ${valorConvertido} ${unidadDeseada}`)
 }
