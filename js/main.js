@@ -3,9 +3,8 @@
 function convertir (conversor, unidadIngresada, unidadDeseada)
 { let valorAConvertir
    do {
-      valorAConvertir = parseInt(prompt(`Ingrese la cantidad de ${unidadIngresada} que desea convertir a ${unidadDeseada}`))}
-   while(isNaN(valorAConvertir)){
-      valorAConvertir = parseInt(prompt(`Atencion, ingrese un numero para  la cantidad de ${unidadIngresada} que desea convertir a ${unidadDeseada}`))}
+      valorAConvertir = parseInt(prompt(`Ingrese la cantidad de ${unidadIngresada} que desea convertir a ${unidadDeseada}, solo puede ingresar numeros`))}
+      while(isNaN(valorAConvertir));
    let valorConvertido= (conversor * valorAConvertir)
    alert (`${valorAConvertir} ${unidadIngresada} son ${valorConvertido} ${unidadDeseada}`)}
 
