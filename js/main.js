@@ -10,7 +10,7 @@ function convertir (conversor, unidadIngresada, unidadDeseada)
 
    //menu de conversion
 
-let opcion = parseInt(prompt(`Ingrese que unidades desea convertir:
+let opcion = parseInt(prompt(`Ingrese el numero de la opcion deseada de las unidades que desea convertir:
       1. De gramos a onzas
       2. De onzas a gramos
       3. De millas a kilometros
