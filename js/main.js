@@ -141,7 +141,7 @@ for (let pagoDescuento of grupoVelas) {
 const buscado = grupoVelas.find(
   (busqueda) => busqueda.nombre.toLowerCase() == input.toLowerCase()
 )
- console.log (buscado)
+
 if (buscado == undefined) {
   alert (`Este articulo es inexistente`)
 }
