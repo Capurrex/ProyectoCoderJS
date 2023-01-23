@@ -133,16 +133,19 @@ for (let pagoDescuento of grupoVelas) {
     );
   }
 }
-let buscado = grupoVelas.find(
-  (busqueda) => busqueda.nombre.toLowerCase() == buscado.toLowerCase()
-);
 
-let busqueda = prompt(
+{let input = prompt(
   `Puedes ver los precios en la consola, pero puedes escribir aqui el nombre de la vela para recibir su descripcion`
 );
 
+const buscado = grupoVelas.find(
+  (busqueda) => busqueda.nombre.toLowerCase() == input.toLowerCase()
+)
+ console.log (buscado)
 if (buscado == undefined) {
-  alert = `Este articulo es inexistente`;
-} else {
-  alert = `${buscado.descripcion}`;
+  alert (`Este articulo es inexistente`)
 }
+ else {
+  alert (`${buscado.descripcion}`);
+}}
+
