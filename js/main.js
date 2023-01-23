@@ -138,7 +138,7 @@ for (let pagoDescuento of grupoVelas) {
   `Puedes ver los precios en la consola, pero puedes escribir aqui el nombre de la vela para recibir su descripcion`
 );
 
-const buscado = grupoVelas.find(
+let buscado = grupoVelas.find(
   (busqueda) => busqueda.nombre.toLowerCase() == input.toLowerCase()
 )
 
