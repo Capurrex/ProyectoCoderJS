@@ -1,0 +1,62 @@
+//variables
+$color1:#845EC2;
+$color2:#FEFEDF;
+$color3:#C493FF;
+$color4:#00C9A7;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+//header
+
+header{
+    background-color: $color2;
+    background-image: url(../imgs/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+h1{
+    color: $color1;
+    font-size: 5rem;
+    font-family: 'Alice', serif;
+}
+
+#logoPrincipal{
+    border-radius: 50%;
+}
+
+h2{
+    color:$color1;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+//lalala
+
+h3{
+    color:$color1;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+//venta
+.barraBusqueda{
+    background-color: $color4;
+}
+
+.mitad{
+    width: 50%;
+}
+
+.card{
+    background-color: $color4;
+}
+
+.imgSizeAdjust{
+    height: fit-content;
+}
